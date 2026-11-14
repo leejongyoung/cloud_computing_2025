@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# 필수 단계가 하나라도 실패하면 즉시 비정상 종료해 Vagrant가 프로비저닝 실패로 인식하게 한다.
+set -euo pipefail
 
 echo "=== 시스템 패키지 업데이트 중... ==="
 apt-get update -y
